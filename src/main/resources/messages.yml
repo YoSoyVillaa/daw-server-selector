@@ -1,0 +1,8 @@
+errors:
+  no_permission: "<white><bold>☁ <gradient:#00E0FF:#FFFFFF>CloudPlugin</gradient> <white>☁ <reset><dark_gray>»<white> <red>¡Permisos insuficientes!<reset>"
+  player_not_found: "<white><bold>☁ <gradient:#00E0FF:#FFFFFF>CloudPlugin</gradient> <white>☁ <reset><dark_gray>»<white> <red>El jugador <yellow>%s<red> no ha sido encontrado.<reset>"
+
+commands:
+  main:
+    help: "<newline>        <bold><gradient:#00E0FF:#FFFFFF>CloudPlugin</gradient></bold> <dark_gray>| <white>Help message<reset><newline><gray><italic>         (Developed by YoSoyVillaa)<reset><newline><newline>  <white><bold>+</bold> <aqua>/cloudplugin reload<reset><newline>        <gray>Reloads config files<reset><newline>"
+    reload: "<white><bold>☁ <gradient:#00E0FF:#FFFFFF>CloudPlugin</gradient> <white>☁ <reset><dark_gray>»<white> Config files reloaded!<reset>"

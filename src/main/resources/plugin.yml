@@ -1,0 +1,16 @@
+name: CloudPlugin
+main: com.yosoyvillaa.cloudplugin.CloudPlugin
+version: 1.0.0
+description: A custom CloudDeveloped plugin
+api-version: 1.18
+author: YoSoyVillaa
+website: https://yosoyvillaa.dev
+libraries:
+  - com.google.inject:guice:5.1.0
+  - org.spongepowered:configurate-yaml:4.1.2
+  - org.spongepowered:configurate-extra-kotlin:4.1.2
+  - org.jetbrains.kotlin:kotlin-reflect:1.9.0
+  - org.jetbrains.kotlin:kotlin-stdlib-common:1.9.0
+  - org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0
+  - org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.0
+  - org.jetbrains.kotlin:kotlin-stdlib:1.9.0
