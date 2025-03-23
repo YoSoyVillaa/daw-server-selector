@@ -1,8 +1,8 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 plugins {
-    kotlin("jvm") version "1.9.0"
-    id("com.github.johnrengelman.shadow") version "7.1.2"
+    kotlin("jvm") version "2.0.0"
+    id("com.gradleup.shadow") version "9.0.0-beta11"
 }
 
 group = "com.yosoyvillaa"
