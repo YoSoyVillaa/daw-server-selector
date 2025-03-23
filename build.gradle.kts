@@ -13,6 +13,7 @@ repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://jitpack.io")
+    maven("https://repo.xenondevs.xyz/releases")
 }
 
 dependencies {
@@ -21,7 +22,10 @@ dependencies {
     compileOnly("org.spongepowered:configurate-yaml:4.1.2")
     compileOnly("org.spongepowered:configurate-extra-kotlin:4.1.2")
 
-    implementation("me.fixeddev:commandflow-bukkit:0.5.13-Adventure"){
+    implementation("xyz.xenondevs.invui:invui:1.44")
+    implementation("xyz.xenondevs.invui:invui-kotlin:1.44")
+
+    implementation("me.fixeddev:commandflow-bukkit:0.5.14-Adventure"){
         exclude("com.google.gson")
         exclude("net.kyori")
     }
@@ -43,6 +47,7 @@ tasks.withType<ShadowJar> {
     relocate("me.fixeddev", "com.yosoyvillaa.dawselector.libs.me.fixeddev")
     relocate("org.intellij.lang.annotations", "com.yosoyvillaa.dawselector.libs.org.intellij.lang.annotations")
     relocate("org.jetbrains.annotations", "com.yosoyvillaa.dawselector.libs.org.jetbrains.annotations")
+    relocate("xyz.xenondevs.invui", "com.yosoyvillaa.dawselector.libs.xyz.xenondevs.invui")
 
     dependencies {
         exclude(dependency("org.jetbrains.kotlin:"))
