@@ -37,7 +37,7 @@ dependencies {
 }
 
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(17)
 }
 
 tasks.withType<ShadowJar> {
@@ -47,7 +47,7 @@ tasks.withType<ShadowJar> {
     relocate("me.fixeddev", "com.yosoyvillaa.dawselector.libs.me.fixeddev")
     relocate("org.intellij.lang.annotations", "com.yosoyvillaa.dawselector.libs.org.intellij.lang.annotations")
     relocate("org.jetbrains.annotations", "com.yosoyvillaa.dawselector.libs.org.jetbrains.annotations")
-    relocate("xyz.xenondevs.invui", "com.yosoyvillaa.dawselector.libs.xyz.xenondevs.invui")
+    relocate("xyz.xenondevs", "com.yosoyvillaa.dawselector.libs.xyz.xenondevs")
 
     dependencies {
         exclude(dependency("org.jetbrains.kotlin:"))
