@@ -1,4 +1,4 @@
-package com.yosoyvillaa.cloudplugin.objects
+package com.yosoyvillaa.dawselector.objects
 
 import net.kyori.adventure.text.minimessage.MiniMessage
 

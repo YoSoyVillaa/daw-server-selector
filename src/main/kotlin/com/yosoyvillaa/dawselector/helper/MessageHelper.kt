@@ -1,8 +1,8 @@
-package com.yosoyvillaa.cloudplugin.helper
+package com.yosoyvillaa.dawselector.helper
 
 import com.google.inject.Inject
 import com.google.inject.name.Named
-import com.yosoyvillaa.cloudplugin.objects.Components.MINIMESSAGE
+import com.yosoyvillaa.dawselector.objects.Components.MINIMESSAGE
 import com.yosoyvillaa.commons.core.main.configuration.YAMLFile
 import net.kyori.adventure.text.Component
 import org.bukkit.ChatColor

@@ -1,11 +1,11 @@
-package com.yosoyvillaa.cloudplugin
+package com.yosoyvillaa.dawselector
 
 import com.google.inject.Guice
-import com.yosoyvillaa.cloudplugin.module.MainModule
+import com.yosoyvillaa.dawselector.module.MainModule
 import com.yosoyvillaa.commons.core.main.Service
 import org.bukkit.plugin.java.JavaPlugin
 
-class CloudPlugin : JavaPlugin() {
+class DawServerSelector : JavaPlugin() {
 
     private lateinit var mainService: Service
 

@@ -1,7 +1,7 @@
-package com.yosoyvillaa.cloudplugin.commands.provider
+package com.yosoyvillaa.dawselector.commands.provider
 
 import com.google.inject.Inject
-import com.yosoyvillaa.cloudplugin.helper.MessageHelper
+import com.yosoyvillaa.dawselector.helper.MessageHelper
 import me.fixeddev.commandflow.bukkit.BukkitDefaultTranslationProvider
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer
 

@@ -26,23 +26,23 @@ dependencies {
         exclude("net.kyori")
     }
 
-    implementation("com.yosoyvillaa.commons:core-guice:1.2.1") {
+    implementation("com.yosoyvillaa.commons:core-guice:1.2.2") {
         exclude("com.google.inject")
         exclude("org.spongepowered")
     }
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 tasks.withType<ShadowJar> {
     destinationDirectory.set(project.file("./jars"))
     archiveFileName.set("${rootProject.name}-${project.version}.jar")
 
-    relocate("me.fixeddev", "com.yosoyvillaa.cloudplugin.libs.me.fixeddev")
-    relocate("org.intellij.lang.annotations", "com.yosoyvillaa.cloudplugin.libs.org.intellij.lang.annotations")
-    relocate("org.jetbrains.annotations", "com.yosoyvillaa.cloudplugin.libs.org.jetbrains.annotations")
+    relocate("me.fixeddev", "com.yosoyvillaa.dawselector.libs.me.fixeddev")
+    relocate("org.intellij.lang.annotations", "com.yosoyvillaa.dawselector.libs.org.intellij.lang.annotations")
+    relocate("org.jetbrains.annotations", "com.yosoyvillaa.dawselector.libs.org.jetbrains.annotations")
 
     dependencies {
         exclude(dependency("org.jetbrains.kotlin:"))

@@ -1,11 +1,11 @@
-package com.yosoyvillaa.cloudplugin.loader
+package com.yosoyvillaa.dawselector.loader
 
 import com.google.inject.Inject
 import com.google.inject.Injector
 import com.google.inject.Singleton
-import com.yosoyvillaa.cloudplugin.commands.CloudPluginCommand
-import com.yosoyvillaa.cloudplugin.commands.builder.CustomUsageBuilder
-import com.yosoyvillaa.cloudplugin.commands.provider.CustomTranslationProvider
+import com.yosoyvillaa.dawselector.commands.DawServerSelectorCommand
+import com.yosoyvillaa.dawselector.commands.builder.CustomUsageBuilder
+import com.yosoyvillaa.dawselector.commands.provider.CustomTranslationProvider
 import com.yosoyvillaa.commons.core.main.Loader
 import me.fixeddev.commandflow.CommandManager
 import me.fixeddev.commandflow.annotated.AnnotatedCommandTreeBuilder
@@ -25,7 +25,7 @@ class CommandsLoader : Loader {
     @Inject private lateinit var customTranslationProvider: CustomTranslationProvider
     @Inject private lateinit var customUsageBuilder: CustomUsageBuilder
 
-    @Inject private lateinit var cloudPluginCommand: CloudPluginCommand
+    @Inject private lateinit var cloudPluginCommand: DawServerSelectorCommand
 
     private lateinit var commandManager: CommandManager
 
@@ -38,7 +38,7 @@ class CommandsLoader : Loader {
         val instanceCreator = SubCommandInstanceCreator { clazz, _ ->  injector.getInstance(clazz)}
 
         val annotatedCommandTreeBuilder = AnnotatedCommandTreeBuilderImpl(builder, instanceCreator)
-        commandManager = BukkitCommandManager("cloudplugin")
+        commandManager = BukkitCommandManager("dawselector")
 
         commandManager.translator.setProvider(customTranslationProvider.load())
         commandManager.usageBuilder = customUsageBuilder

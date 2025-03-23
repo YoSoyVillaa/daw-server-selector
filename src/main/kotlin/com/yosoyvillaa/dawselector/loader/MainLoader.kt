@@ -1,4 +1,4 @@
-package com.yosoyvillaa.cloudplugin.loader
+package com.yosoyvillaa.dawselector.loader
 
 import com.google.inject.Inject
 import com.yosoyvillaa.commons.core.main.Loader

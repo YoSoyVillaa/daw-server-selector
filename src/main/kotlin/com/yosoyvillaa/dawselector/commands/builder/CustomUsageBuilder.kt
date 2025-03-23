@@ -1,7 +1,7 @@
-package com.yosoyvillaa.cloudplugin.commands.builder
+package com.yosoyvillaa.dawselector.commands.builder
 
 import com.google.inject.Inject
-import com.yosoyvillaa.cloudplugin.helper.MessageHelper
+import com.yosoyvillaa.dawselector.helper.MessageHelper
 import me.fixeddev.commandflow.CommandContext
 import me.fixeddev.commandflow.usage.UsageBuilder
 import net.kyori.adventure.text.Component

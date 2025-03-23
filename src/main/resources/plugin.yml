@@ -1,5 +1,5 @@
-name: CloudPlugin
-main: com.yosoyvillaa.cloudplugin.CloudPlugin
+name: DawServerSelector
+main: com.yosoyvillaa.dawselector.DawServerSelector
 version: 1.0.0
 description: A custom CloudDeveloped plugin
 api-version: 1.18

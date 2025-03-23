@@ -1,7 +1,7 @@
-package com.yosoyvillaa.cloudplugin.service
+package com.yosoyvillaa.dawselector.service
 
 import com.google.inject.Inject
-import com.yosoyvillaa.cloudplugin.loader.MainLoader
+import com.yosoyvillaa.dawselector.loader.MainLoader
 import com.yosoyvillaa.commons.core.main.Service
 
 class MainService : Service {
