@@ -8,12 +8,14 @@ import com.yosoyvillaa.commons.core.main.Service
 import com.yosoyvillaa.commons.core.main.configuration.FileMatcher
 import com.yosoyvillaa.commons.core.main.configuration.YAMLFile
 import org.bukkit.plugin.Plugin
+import org.slf4j.Logger
 
 class MainModule(private val cloudPlugin: DawServerSelector) : AbstractModule() {
 
     override fun configure() {
         bind(DawServerSelector::class.java).toInstance(cloudPlugin)
         bind(Plugin::class.java).to(DawServerSelector::class.java)
+        bind(Logger::class.java).toInstance(cloudPlugin.slF4JLogger)
 
         val fileMatcher = FileMatcher()
             .bind("config", YAMLFile(this, "config.yml", cloudPlugin.dataFolder.toPath()))

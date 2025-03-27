@@ -1,0 +1,45 @@
+mode: "SERVER" # SERVER or LOBBY
+
+servers:
+  - name: "David Villarreal"
+    server-id: "SRV-DV"
+    host: "172.18.0.1:25572"
+
+menu:
+  title: "<dark_gray>     Selecciona un servidor"
+  structure:
+    - "# # # # # # # # #"
+    - "# x x x x x x x #"
+    - "# x x x x x x x #"
+    - "# x x x x x x x #"
+    - "# # # < c > # # #"
+  global-items:
+    '#':
+      material: GRAY_STAINED_GLASS_PANE
+      display-name: ""
+  items:
+    server:
+      display-name: "<white>Servidor de <#accf04>%name%"
+      lore:
+        - "<dark_gray>Ventura @ #%id%"
+        - ""
+        - "<bold> </bold><aqua>♦  <white>Estado: %pinger_isonline_%host%%"
+        - " <#accf04>👥<bold> </bold><white>Jugadores conectados: <#accf04>%bungee_%id%%     "
+        - ""
+        - "<green>¡Click para entrar!"
+    close:
+      material: PLAYER_HEAD
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=="
+      display-name: "<red>Cerrar menú"
+    disconnect:
+      material: PLAYER_HEAD
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=="
+      display-name: "<red>Salir del servidor"
+    next:
+      material: PLAYER_HEAD
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19"
+      display-name: "<gray>Siguiente página"
+    previous:
+      material: PLAYER_HEAD
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0="
+      display-name: "<gray>Página anterior"

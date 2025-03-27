@@ -14,6 +14,7 @@ repositories {
     maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://jitpack.io")
     maven("https://repo.xenondevs.xyz/releases")
+    maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
 }
 
 dependencies {
@@ -21,6 +22,7 @@ dependencies {
     compileOnly("com.google.inject:guice:5.1.0")
     compileOnly("org.spongepowered:configurate-yaml:4.1.2")
     compileOnly("org.spongepowered:configurate-extra-kotlin:4.1.2")
+    compileOnly("me.clip:placeholderapi:2.11.6")
 
     implementation("xyz.xenondevs.invui:invui:1.44")
     implementation("xyz.xenondevs.invui:invui-kotlin:1.44")

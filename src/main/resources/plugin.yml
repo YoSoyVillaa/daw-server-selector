@@ -5,6 +5,8 @@ description: A custom CloudDeveloped plugin
 api-version: 1.18
 author: YoSoyVillaa
 website: https://yosoyvillaa.dev
+depend:
+  - PlaceholderAPI
 libraries:
   - com.google.inject:guice:5.1.0
   - org.spongepowered:configurate-yaml:4.1.2

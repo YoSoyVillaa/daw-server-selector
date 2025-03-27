@@ -12,6 +12,17 @@ class MessageHelper {
 
     @Inject @Named("messages") private lateinit var messages: YAMLFile
 
+    fun deserialize(file: YAMLFile, replacers: Map<String, Any>, vararg path: String): Component {
+        if (replacers.isEmpty())
+            return MINIMESSAGE.deserialize(file.get(*path).getString(path.contentToString()))
+
+        var message = file.get(*path).getString(path.contentToString())
+
+        for ((key, value) in replacers) message = message.replace(key, value.toString())
+
+        return MINIMESSAGE.deserialize(message)
+    }
+
     fun deserialize(replacers: Map<String, Any>, vararg path: String): Component {
         if (replacers.isEmpty())
             return MINIMESSAGE.deserialize(messages.get(*path).getString(path.contentToString()))
